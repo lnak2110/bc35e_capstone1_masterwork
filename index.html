@@ -1,56 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Masterwork</title>
-
-    <!-- BOOTSTRAP 4.6 -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
-      crossorigin="anonymous"
-    />
-
-    <!-- GOOGLE FONT -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
-
     <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+        href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;700&family=Nunito:wght@300;400;700&display=swap"
+        rel="stylesheet">
 
+    <style type="text/css">
+        @font-face {
+            font-family: Roboto;
+            src: url("chrome-extension://mcgbeeipkmelnpldkobichboakdfaeon/css/Roboto-Regular.ttf");
+        }
+    </style>
+    <!-- BS V4 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <!-- MAIN CSS -->
-    <link rel="stylesheet" href="./css/main.css" />
-  </head>
-  <body>
-    <header></header>
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
 
-    <footer></footer>
+<body>
+    <!-- HEADER -->
+    <header id="headerMasterwork" class="fixed-top">
+        <nav
+            class="container px-3 py-0 navbar navbar-expand-lg navbar-light d-flex justify-content-between align-items-center">
+            <a class="navbar-brand" href="index.html">
+                <p class="mb-0"><i class="far fa-handshake"></i><span> Masterwork</span></p>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMasterwork"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMasterwork">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                            Pages
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item pt-0" href="#">Blog posts</a>
+                            <a class="dropdown-item pt-0" href="#">Blog single</a>
+                            <a class="dropdown-item pt-0" href="#">Landing page</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item mx-16px">
+                        <a class="btn btn-outline-danger" href="#">Schedule a Demo</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- CAROUSEL-->
+    <section id="carouselMasterwork">
+        <div class="carousel__content">
+            <div class="container">
+                <div class="carouselMasterwork__left px-3">
+                    <h3>We Execute Our Ideas <br> From Start to Finish</h3>
+                    <p>Building a beautiful interactive business for startups and innovative companies.</p>
+                    <button>GET STARTED</button>
+                </div>
+                <div class="carouselMasterwork__right">
+                    <img src="./assets/img/main.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- TOOL -->
+    <section id="toolMasterwork" class="tool section">
+        <div class="container">
+            <div class="title text-center">
+                <h6>WHY CHOOSE US</h6>
+                <h3>Tools for business startup to <br> professional</h3>
+                <p class="my-3">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                    Nulla mollis dapibus <br> nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
+            </div>
+            <div class="tool__content">
+                <div class="row text-center">
+                    <div class="col-lg-4 col-md-6 mt-5">
+                        <div class="tool__item">
 
-    <!-- JQUERY -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
+                            <img src="assets/img/s1.png" alt="" class="img-fluid">
+                            <h3 class="my-3">Interactive</h3>
+                            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium tempora
+                                rerum
+                                perspiciatis?</p>
 
-    <!-- BOOTSTRAP 4.6 -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mt-5">
+                        <div class="tool__item">
+
+                            <img src="assets/img/s2.png" alt="" class="img-fluid">
+                            <h3 class="my-3">Business</h3>
+                            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium tempora
+                                rerum
+                                perspiciatis?</p>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-5">
+                        <div class="tool__item">
+
+                            <img src="assets/img/s3.png" alt="" class="img-fluid">
+                            <h3 class="my-3">Inspiration</h3>
+                            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium tempora
+                                rerum
+                                perspiciatis?</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- ABOUT -->
+    <section class="about py-5">
+        <div class="container row align-items-center py-lg-3 mt-3 mx-auto">
+            <div class="about__left col-lg-6 book-info pr-lg-5">
+                <div class="sub-title">
+                    <h6>ABOUT OUR COMPANY</h6>
+                    <h3 class="mb-md-4 mb-3">The Best Choice For Your Successful Business!</h3>
+                    <p class="mb-md-5 mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et est repellendus
+                        illum harum quam
+                        nihil totam
+                        reprehenderit!
+                        Ut sed eveniet quos! Asperiores officia, repudiandae similique reiciendis, ab est magnam esse
+                        nesciunt ea fuga
+                        facere
+                        voluptatem.</p>
+                    <button>READ MORE</button>
+                </div>
+            </div>
+            <div class="about__right col-lg-6 pl-lg-5 mt-lg-0 mt-5">
+                <img src="./assets/img/about.jpg" alt="about">
+            </div>
+        </div>
+    </section>
+    <!-- NUMBER -->
+    <section class="number section">
+        <div class="container section pb-lg-3">
+            <div class="row">
+                <div class="number__item col-lg-4 col-sm-6">
+                    <div class="number__bg">
+                        <h4>Happy Customers</h4>
+                        <p class="counter">10458</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere atque sed.</p>
+                    </div>
+                </div>
+                <div class="number__item col-lg-4 col-sm-6 mt-sm-0 mt-4">
+                    <div class="number__bg">
+                        <h4>Winning Awards</h4>
+                        <p class="counter">890</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere atque sed.</p>
+                    </div>
+                </div>
+                <div class="number__item col-lg-4 col-sm-6 mt-lg-0 mt-sm-5 mt-4">
+                    <div class="number__bg">
+                        <h4>Completed Projects</h4>
+                        <p class="counter">5345</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere atque sed.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- COMMIT -->
+    <section class="commit section">
+        <div class="container d-flex justify-content-start">
+            <div class="conmmit__content text-white">
+                <h2>We are true to ourselves, and commit to always perform at our best.</h2>
+                <p class="mt-md-4 mt-3 mb-md-5 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Necessitatibus, doloribus
+                    atque. Corrupti exercitationem voluptatem ipsum iste consequuntur et vitae voluptas temporibus?
+                    Maxime dolores amet
+                    voluptatum illo consequatur placeat fugit ducimus.</p>
+                <button>READ MORE</button>
+            </div>
+        </div>
+    </section>
+    <!-- SOLUTIONS -->
+    <section class="solutions section">
+        <div class="title text-center">
+            <h6 class="sub-title">We are here for you</h6>
+            <h3>Explore Solutions </h3>
+            <p class="my-3"> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                Nulla mollis dapibus <br> nunc, ut rhoncus
+                turpis sodales quis. Integer sit amet mattis quam.</p>
+        </div>
+        <div class="solutions__content container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mt-5">
+                    <div class="solutions__item">
+                        <div class="solutions__pic">
+                            <a href="#" class="d-block">
+                                <img src="./assets/img/b1.jpg" alt="" class="img-fluid news-image">
+                                <p class="date">26 Jan, 2020</p>
+                            </a>
+                        </div>
+                        <div class="solutions__text">
+                            <label class="tag red">Business</label>
+                            <h4><a href="#">Corporate, Business &amp; Digital Agency</a></h4>
+                            <p>Lorem ipsum dolor sit amet nostrum ad minus libero fugiat molestiae
+                                ullam ipsam
+                                quas unde earum...</p>
+                            <p class="my-0">
+                                <span>Know More</span> <i class="fa fa-arrow-right"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-5">
+                    <div class="solutions__item">
+                        <div class="solutions__pic">
+                            <a href="#" class="d-block">
+                                <img src="./assets/img/b2.jpg" alt="" class="img-fluid news-image">
+                                <p class="date">15 Apr, 2020</p>
+                            </a>
+                        </div>
+                        <div class="solutions__text">
+                            <label class="tag green">Design</label>
+                            <h4><a href="#">Corporate, Business &amp; Digital Agency</a></h4>
+                            <p>Lorem ipsum dolor sit amet nostrum ad minus libero fugiat molestiae
+                                ullam ipsam
+                                quas unde earum...</p>
+                            <p class="my-0">
+                                <span>Know More</span> <i class="fa fa-arrow-right"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-5">
+                    <div class="solutions__item">
+                        <div class="solutions__pic">
+                            <a href="#" class="d-block">
+                                <img src="./assets/img/b3.jpg" alt="" class="img-fluid news-image">
+                                <p class="date">25 Jun, 2020</p>
+                            </a>
+                        </div>
+                        <div class="solutions__text">
+                            <label class="tag blue">Industry</label>
+                            <h4><a href="#">Corporate, Business &amp; Digital Agency</a></h4>
+                            <p>Lorem ipsum dolor sit amet nostrum ad minus libero fugiat molestiae
+                                ullam ipsam
+                                quas unde earum...</p>
+                            <p class="my-0">
+                                <span>Know More</span> <i class="fa fa-arrow-right"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- JQUERY JS  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- BS V4 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+    <!-- NAV-FIXED  -->
+    <script type="text/javascript">
+        window.addEventListener('scroll', function () {
+            var header = document.querySelector('header');
+            header.classList.toggle('nav-fixed', window.scrollY > 0);
+        })
+    </script>
+    <!-- WAYPOINTS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+        integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- COUNTING UP TO NUMBER -->
+    <script src="./assets/js/jquery.countup.min.js"></script>
+
+    <script>
+        $('.counter').countUp({
+            'time': 2000,
+            'delay': 10
+        });
+    </script>
+</body>
+
 </html>
