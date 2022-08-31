@@ -21,7 +21,7 @@ header {
     width: 100%;
     z-index: 1;
     box-shadow: 0 3px 9px rgb(0 0 0 / 5%);
-    display: flex;
+    display: grid;
     align-items: center;
     transition: all .5s;
 }
@@ -45,6 +45,21 @@ header {
     letter-spacing: -1px;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 
+}
+
+#headerMasterwork .navbar-toggler {
+    padding: 0;
+    border: 0;
+}
+
+#headerMasterwork .navbar-toggler i {
+    color: #fff;
+    width: 2.25rem;
+    height: 2.25rem;
+    line-height: 36px;
+    background-color: #dc4f72;
+    border-radius: 5px;
+    text-align: center;
 }
 
 #headerMasterwork .nav-item.active .nav-link {
@@ -530,4 +545,16 @@ header {
 
 .solutions__item:hover .solutions__text i {
     transform: translateX(3px);
+}
+
+/* *******************RESPONSIVE******************* */
+/* HEADER  */
+@media (max-width: 991.98px) {
+    .container {
+        max-width: 100%;
+        padding-right: 30px;
+        padding-left: 30px;
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
