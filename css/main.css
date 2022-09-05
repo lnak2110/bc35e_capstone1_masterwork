@@ -50,13 +50,14 @@ body {
 }
 
 /* HEADER */
+
 header {
   background-color: #fff;
   height: 90px;
   width: 100%;
   z-index: 1;
   box-shadow: 0 3px 9px rgb(0 0 0 / 5%);
-  display: flex;
+  display: grid;
   align-items: center;
   transition: all 0.5s;
 }
@@ -78,6 +79,21 @@ header {
   font-weight: 700;
   font-size: 1.625rem;
   letter-spacing: -1px;
+}
+
+#headerMasterwork .navbar-toggler {
+  padding: 0;
+  border: 0;
+}
+
+#headerMasterwork .navbar-toggler i {
+  color: #fff;
+  width: 2.25rem;
+  height: 2.25rem;
+  line-height: 36px;
+  background-color: #dc4f72;
+  border-radius: 5px;
+  text-align: center;
 }
 
 #headerMasterwork .nav-item.active .nav-link {
@@ -178,6 +194,43 @@ header {
 
 #headerMasterwork .dropdown-item:hover {
   color: #dc4f72;
+}
+
+@media (max-width: 991.98px) {
+  .container {
+    max-width: 100%;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  nav {
+    background-color: #fff;
+    position: relative;
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    width: 100%;
+  }
+
+  #headerMasterwork .dropdown-menu {
+    transform: translateX(0);
+    text-align: center;
+  }
+
+  #headerMasterwork .dropdown-menu::before {
+    left: 228px;
+  }
+
+  .nav-fixed {
+    padding-bottom: 40px;
+  }
+
+  .nav-item {
+    text-align: center;
+  }
 }
 
 /* CAROUSEL */
