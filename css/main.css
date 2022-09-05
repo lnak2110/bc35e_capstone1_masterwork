@@ -57,7 +57,7 @@ header {
   width: 100%;
   z-index: 1;
   box-shadow: 0 3px 9px rgb(0 0 0 / 5%);
-  display: flex;
+  display: grid;
   align-items: center;
   transition: all 0.5s;
 }
@@ -67,6 +67,20 @@ header {
   height: 70px;
   box-shadow: 0 3px 9px rgb(0 0 0 / 5%);
   transition: all 0.5s;
+}
+
+#headerMasterwork .navbar-toggler i {
+  color: #fff;
+  width: 2.25rem;
+  height: 2.25rem;
+  line-height: 36px;
+  background-color: #dc4f72;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: #2b2b2b;
 }
 
 .navbar-brand i {
@@ -264,7 +278,7 @@ header {
 }
 
 #toolMasterwork .tool__item:hover {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
+  box-shadow: rgb(196 196 196 / 20%) 1px 5px 7.5px;
   transform: translateY(-0.5rem);
   background-color: #2b2b2b;
 }
@@ -363,12 +377,14 @@ header {
   padding: 32px;
   border: 1px solid transparent;
   border-radius: 8px;
-  box-shadow: 1px 5px 7.5px rgba(196, 196, 196, 0.2);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
+  transform: translateY(0);
   transition: all 0.5s;
 }
 
 .number__bg:hover {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
+  box-shadow: 1px 5px 7.5px rgba(196, 196, 196, 0.2);
+  transform: translateY(-0.5rem);
 }
 
 .number__bg .number__item h4 {
@@ -449,7 +465,7 @@ header {
 .solutions__item {
   transform: translateY(0);
   transition: all 0.5s ease-out;
-  border-radius: 0 0 8px 8px;
+  border-radius: 8px 8px 8px 8px;
   border: 1px solid #999;
 }
 
@@ -620,7 +636,7 @@ img.img-curve:hover {
   transform: translate(-2px, 0) rotate(45deg);
 }
 
-.faq-page li input[type='checkbox']:checked ~ i::before {
+.faq-page li input[type='checkbox']:checked~i::before {
   transform: translate(2px, 0) rotate(45deg);
 }
 
@@ -628,7 +644,7 @@ img.img-curve:hover {
   transform: translate(2px, 0) rotate(-45deg);
 }
 
-.faq-page li input[type='checkbox']:checked ~ i::after {
+.faq-page li input[type='checkbox']:checked~i::after {
   transform: translate(-2px, 0) rotate(-45deg);
 }
 
@@ -639,7 +655,7 @@ img.img-curve:hover {
   margin: 0;
 }
 
-.faq-page li input[type='checkbox']:checked ~ p {
+.faq-page li input[type='checkbox']:checked~p {
   margin-top: 0;
   max-height: 0;
   opacity: 0;
@@ -720,6 +736,7 @@ img.img-curve:hover {
   .products .products-content {
     margin-bottom: 30px;
   }
+
   .products .products-content h3 {
     font-size: 24px;
     line-height: 30px;
@@ -965,4 +982,44 @@ footer ul.social li a i {
   line-height: 50px;
   color: #2b2b2b;
   font-size: 22px;
+}
+
+/* *******************RESPONSIVE******************* */
+/* HEADER  */
+@media (max-width: 991.98px) {
+  .container {
+    max-width: 100%;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  nav {
+    background-color: #2b2b2b;
+    position: relative;
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    width: 100%;
+  }
+
+  #headerMasterwork .dropdown-menu {
+    transform: translateX(0);
+    text-align: center;
+  }
+
+  #headerMasterwork .dropdown-menu::before {
+    left: 228px;
+  }
+
+  .nav-fixed {
+    padding-bottom: 40px;
+  }
+
+  .nav-item {
+    text-align: center;
+  }
+
 }
