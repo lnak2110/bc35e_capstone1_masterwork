@@ -258,7 +258,7 @@ header {
 }
 
 .carouselMasterwork__right img {
-  width: 100%;
+  /* width: 100%; */
   object-fit: cover;
   rotate: 180deg;
 }
@@ -636,7 +636,7 @@ img.img-curve:hover {
   transform: translate(-2px, 0) rotate(45deg);
 }
 
-.faq-page li input[type='checkbox']:checked~i::before {
+.faq-page li input[type='checkbox']:checked ~ i::before {
   transform: translate(2px, 0) rotate(45deg);
 }
 
@@ -644,7 +644,7 @@ img.img-curve:hover {
   transform: translate(2px, 0) rotate(-45deg);
 }
 
-.faq-page li input[type='checkbox']:checked~i::after {
+.faq-page li input[type='checkbox']:checked ~ i::after {
   transform: translate(-2px, 0) rotate(-45deg);
 }
 
@@ -655,7 +655,7 @@ img.img-curve:hover {
   margin: 0;
 }
 
-.faq-page li input[type='checkbox']:checked~p {
+.faq-page li input[type='checkbox']:checked ~ p {
   margin-top: 0;
   max-height: 0;
   opacity: 0;
@@ -1021,5 +1021,4 @@ footer ul.social li a i {
   .nav-item {
     text-align: center;
   }
-
 }
